@@ -5,6 +5,7 @@
 :root{
     --primary-color: #60495A;
     --secondary-color: #7C9299;
+    --tertiary-color: #DDA3B2;
 }
 
 body, html {
@@ -30,6 +31,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   transition: color .1s;
+  color: var(--tertiary-color)
 }
 
 a:hover {
@@ -152,11 +154,11 @@ h4 a:hover{
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: var(--primary-color);
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: var(--secondary-color);
 }
 
 .post {
@@ -197,7 +199,7 @@ h4 a:hover{
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: var(--tertiary-color);
 }
 
 .comment .meta {
