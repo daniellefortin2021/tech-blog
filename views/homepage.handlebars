@@ -1,13 +1,20 @@
 <div class="post-list">
   {{#each posts as |post|}}
   <div>
-    <article class="post">
-      <div class="title">
-        {{title}}
+    <article class="post container">
+      <div class="title row">
+          <div class="col-sm">
+              <h4><a class="link" href="/post/{{id}}">{{title}}</a></h4>
+          </div>
+        <div class="col-sm">
+            <p class="author">Written by {{user.username}} on {{created_at}}</p>
+        </div>
+        
+      </div>
+      <div>
+          <p class="card-body">{{content}}</p>
       </div>
       <div class="meta">
-        Written by {{user.username}} on {{created_at}}
-        |
         <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
       </div>
     </article>
