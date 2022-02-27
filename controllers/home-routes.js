@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
+    console.log(req.session);
     Post.findAll({
       attributes: [
         'id',
@@ -35,5 +36,15 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
       });
   });
+
+  router.get('/login', (req, res) => {
+      //check for a session and redirect to homepage if one exists
+      if (req.session.loggedIn) {
+          res.redirect('/');
+          return;
+      }
+
+      res.render('login');
+  })
 
 module.exports = router;

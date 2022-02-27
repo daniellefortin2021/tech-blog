@@ -108,6 +108,20 @@ main {
   padding: 2% 4%;
 }
 
+.title{
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+    border: 3px solid var(--secondary-color);
+}
+
+.post{
+    border-radius: 15px;
+    border: 0px solid var(--secondary-color);
+}
+
 .btn-no-style {
   background: none;
   border: none;
@@ -135,7 +149,7 @@ main {
 }
 
 .post {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   line-height: 150%;
 }
 
@@ -143,6 +157,9 @@ main {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
+}
+.meta{
+    margin-top: 1%;
 }
 
 .edit-link {
