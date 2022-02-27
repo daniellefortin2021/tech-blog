@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const { userInfo } = require('os');
-const { Post, User } = require('../../models');
+const { Post, User, Comment } = require('../../models');
 
 //get all posts
 router.get('/', (req,res) => {
@@ -11,13 +10,21 @@ router.get('/', (req,res) => {
         include: [
             { model: User,
             attributes: ['username']
+            },
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
             }
         ]
     })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
         console.log(err);
-        res.statusCode(500).json(err);
+        res.status(500).json(err);
     })
 })
 
@@ -32,6 +39,14 @@ router.get('/:id', (req, res) => {
             {
                 model: User,
                 attributes: ['username']
+            },
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
             }
         ]
     }).then(dbPostData => {
