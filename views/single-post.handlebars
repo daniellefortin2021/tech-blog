@@ -6,7 +6,7 @@
       <p>{{post.content}}</p>
   </div>
   <div class="meta">
-      <p>Written by {{post.user.username}} on {{post.created_at}}</p>
+      <p>Written by {{post.user.username}} on {{format_date post.created_at}}</p>
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
 </article>
