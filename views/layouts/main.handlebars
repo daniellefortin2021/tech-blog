@@ -11,16 +11,19 @@
 </head>
 
 <body>
-  <div class="wrapper">
-      <nav class="nav">
+  <div>
+    <nav class="float-right">
           <a href="/">Home</a>
           {{#if loggedIn}}
           <a href="/dashboard">Dashboard</a>
           <button id="logout" class="btn-no-style">logout</button>
+          <a href="/signup">Sign Up</a>
           {{else}}
           <a href="/login">Login</a>
           {{/if}}
       </nav>
+  </div>
+  <div class="wrapper">
     <header>
       <h1>
        Tech News

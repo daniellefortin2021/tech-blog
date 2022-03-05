@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
         where: {
             id: req.params.id
         }
+        //include user data
     })
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
