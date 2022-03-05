@@ -243,9 +243,14 @@ h4 a:hover{
   margin-bottom: 5%;
 }
 
+.comment-body{
+  width: 100%;
+}
+
 .comment {
   padding: 1%;
   margin-bottom: 1%;
+  border-radius: 15px;
 }
 
 .comment:nth-child(odd) {
@@ -258,9 +263,7 @@ h4 a:hover{
   opacity: .6;
 }
 
-.new-post-form input {
-  width: 300px;
-}
+
 .edit-post-form {
   margin-bottom: 5%;
 }
