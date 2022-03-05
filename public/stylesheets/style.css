@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #60495A;
+    --secondary-color: #7C9299;
+    --tertiary-color: #DDA3B2;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
+  color: #333;
+}
+
+nav{
+    padding: 10px;
+    line-height: 1.25;
+    float: right;
+}
+
+h1{
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color .1s;
+  color: var(--tertiary-color)
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+textarea, input {
+  padding: .5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid var(--secondary-color);
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+form {
+  display: flex;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: solid 0px;
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    height: 100%;
+    width: 30%;
+}
+
+form input{
+  background-color: white;
+    border: solid 1px var(--primary-color);
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.submit{
+  background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: solid 2px var(--primary-color);
+    border-radius: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  background-color: var(--primary-color);
+}
+
+header h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 15px;
+    border: 3px solid var(--secondary-color);
+}
+
+h4 a{
+    color: white;
+    font-weight: bold;
+}
+
+h4 a:hover{
+    color: var(--primary-color)
+}
+
+.author{
+    color:white;
+}
+
+.post{
+    border-radius: 15px;
+    border: 0px solid var(--secondary-color);
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: var(--secondary-color);
+}
+
+.delete-post-btn {
+  background-color: var(--primary-color);
+}
+
+.delete-post-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.post {
+  margin-bottom: 3%;
+  line-height: 150%;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.your-posts{
+    padding-top: 10px;
+}
+
+.content{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.meta{
+    margin-top: 1%;
+}
+
+.white-text{
+  color: white;
+}
+
+.meta a{
+    color: var(--primary-color)
+}
+
+.meta a:hover{
+    color: var(--secondary-color)
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment-body{
+  width: 100%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+  border-radius: 15px;
+}
+
+.comment:nth-child(odd) {
+  background-color: var(--tertiary-color);
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}
+
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
