@@ -192,11 +192,19 @@ h4 a:hover{
 }
 
 .delete-post-btn {
-  background-color: var(--primary-color);
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  border: solid 2px var(--secondary-color);
+  border-radius: 15px;
+  font-size: 20px;
+  width: 100%;
 }
 
 .delete-post-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: var(--primary-color);
 }
 
 .post {
