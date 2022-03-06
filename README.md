@@ -14,6 +14,7 @@ This project was built with JavaScript, Node, Express, Handlebars, and MySql.
 
 # Link
 https://github.com/daniellefortin2021/tech-blog
+https://fathomless-badlands-08440.herokuapp.com/
 
 # Preview 
 ![screenshot of tech blog website](./public/assets/tech-blog-screenshot.png)
