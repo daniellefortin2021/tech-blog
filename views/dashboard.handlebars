@@ -10,12 +10,13 @@
       <label for="content">Content</label>
       <input id="content" name="content" />
     </div>
-    <button type="submit" id="class" class="submit">Create</button>
+    <button type="submit" id="submit" class="submit">Create</button>
   </form>
 </div>
 
 {{#if posts.length}}
-<section class="your-posts">
+<div class="row">
+  <div class="your-posts">
   <h2>Your Posts</h2>
   <div>
     {{#each posts as |post|}}
@@ -25,7 +26,8 @@
     </div>
     {{/each}}
   </div>
-</section>
+</div>
+</div>
+
 {{/if}}
 <script src="/javascript/add-post.js"></script>
-<script src="/javascript/edit-post.js"></script>
