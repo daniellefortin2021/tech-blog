@@ -1,7 +1,7 @@
 ## Tech Blog
 
 # Table of Contents
-* Languaes
+* Languages
 * Link
 * Preview
 * Installation
