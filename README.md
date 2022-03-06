@@ -1,4 +1,5 @@
 ## Tech Blog
+This app is a website that allows users to create a login, make posts, and comment on posts. 
 
 # Table of Contents
 * Languages
