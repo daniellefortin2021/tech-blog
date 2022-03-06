@@ -15,6 +15,7 @@ This project was built with JavaScript, Node, Express, Handlebars, and MySql.
 https://github.com/daniellefortin2021/tech-blog
 
 # Preview 
+![screenshot of tech blog website](./public/assets/tech-blog-screenshot.png)
 
 # Installation
 Install Node.JS on your computer by running npm install in the command line. Then, clone the repository to your computer.
