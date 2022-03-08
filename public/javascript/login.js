@@ -1,8 +1,3 @@
-function signupFormHandler(event) {
-    event.preventDefault();
-  
-}
-
 async function loginFormHandler(event) {
   event.preventDefault();
 
